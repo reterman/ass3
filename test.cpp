@@ -82,7 +82,7 @@ int main() {
     cout << "k:"<<endl;
     cout << K.str();
 
-    // creatGraphs(T, detTime, v0, k0, alpha1, beta1, alpha2, beta2);
+    creatGraphs(T, detTime, v0, k0, alpha1, beta1, alpha2, beta2);
 
     
 

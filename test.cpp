@@ -47,9 +47,9 @@ void creatGraphs(double T, double detTime, double v0, double k0, double alpha1, 
  if (pipe!=NULL)
  {
     fprintf(pipe, "%s\n" ,"set terminal qt 0");
-    fprintf(pipe, "%s\n", "plot 'C:\\gnuplot\\coord1.dat' title 'victims' with lines, 'C:\\gnuplot\\coord2.dat' title 'killers' with lines");
+    fprintf(pipe, "%s\n", "plot 'C:\\gnuplot\\coord1.dat' title 'victims' with lines lt 4, 'C:\\gnuplot\\coord2.dat' title 'killers' with lines lt 8" );
     fprintf(pipe, "%s\n" ,"set terminal qt 1");
-    fprintf(pipe, "%s\n", "plot 'C:\\gnuplot\\coord3.dat' title 'relation' with lines");
+    fprintf(pipe, "%s\n", "plot 'C:\\gnuplot\\coord3.dat' title 'relation' with lines lt 3");
     fflush(pipe);
     _pclose(pipe);
  } else cout << "ERROR!"<<endl;
